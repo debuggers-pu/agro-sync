@@ -1,7 +1,7 @@
 import React from "react";
 import { withExpoSnack } from "nativewind";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
-import image from "../../assets/bg.png";
+import image from "../assets/bg.png";
 import { Button } from "react-native-paper";
 
 const SplashScreen = () => (

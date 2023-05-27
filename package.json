@@ -7,7 +7,6 @@
   "scripts": {
     "setup": " npx lerna run setup --scope=@agri-sync/cms",
     "start:cms": "npx lerna run up --scope=@agri-sync/cms",
-    "start:web": "npx lerna run dev --scope=@agri-sync/web",
-    "start:app": "npx lerna run start --scope=@agri-sync/app"
+    "start:app": "cd packages/app && expo start"
   }
 }

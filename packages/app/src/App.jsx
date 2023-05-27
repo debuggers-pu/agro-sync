@@ -10,9 +10,9 @@ import {
 } from "@ui-kitten/components";
 import { ToastAndroid, Button, StatusBar } from "react-native";
 // import BottomNav from "./src/components/resuables/bottom-nav/BottomNav";
-import InputNumber from "./src/components/resuables/inputfield-number/InputNumber";
-import CustomSelect from "./src/components/resuables/Select/CustomSelect";
-import SplashScreen from "./src/screens/SplashScren";
+import InputNumber from "./components/resuables/inputfield-number/InputNumber";
+import CustomSelect from "./components/resuables/Select/CustomSelect";
+import SplashScreen from "./screens/SplashScren";
 
 const Stack = createNativeStackNavigator();
 export default () => (
