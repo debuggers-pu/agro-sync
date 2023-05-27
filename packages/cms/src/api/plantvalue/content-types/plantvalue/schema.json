@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plantvalues",
+  "info": {
+    "singularName": "plantvalue",
+    "pluralName": "plantvalues",
+    "displayName": "plantvalue"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

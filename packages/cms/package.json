@@ -1,0 +1,32 @@
+{
+  "name": "@agri-sync/cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Strapi App",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "setup": "docker build -t agri-sync:latest .",
+    "up": "docker compose up"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.8.2",
+    "@strapi/plugin-users-permissions": "4.8.2",
+    "@strapi/plugin-i18n": "4.8.2",
+    "pg": "8.8.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "df12e65b-7ccb-4086-9749-e66488ced549"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

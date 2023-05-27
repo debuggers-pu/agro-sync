@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inspectors",
+  "info": {
+    "singularName": "inspector",
+    "pluralName": "inspectors",
+    "displayName": "inspector",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "post": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ],
+      "required": true,
+      "default": "A"
+    },
+    "officename": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

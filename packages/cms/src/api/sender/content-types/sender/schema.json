@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "senders",
+  "info": {
+    "singularName": "sender",
+    "pluralName": "senders",
+    "displayName": "sender",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phonenumber": {
+      "type": "biginteger",
+      "required": true,
+      "max": "10",
+      "min": "9",
+      "unique": true
+    },
+    "address": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::address.address"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "plant",
+        "animal"
+      ]
+    },
+    "idnumber": {
+      "type": "string"
+    }
+  }
+}
