@@ -1,0 +1,9 @@
+{
+  "name": "@agri-sync/core",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "@agri-sync/cms": "*"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "animalvalues",
+  "info": {
+    "singularName": "animalvalue",
+    "pluralName": "animalvalues",
+    "displayName": "animalvalue"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

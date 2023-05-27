@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "animals",
+  "info": {
+    "singularName": "animal",
+    "pluralName": "animals",
+    "displayName": "animal",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "vehicle": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::vehicle.vehicle"
+    },
+    "sender": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sender.sender"
+    },
+    "receivers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::receiver.receiver"
+    },
+    "onloadtime": {
+      "type": "datetime",
+      "required": true
+    },
+    "onloadlocation": {
+      "type": "string",
+      "required": false
+    },
+    "reason": {
+      "type": "string"
+    },
+    "hasfirstaid": {
+      "type": "boolean"
+    },
+    "offloadtime": {
+      "type": "datetime"
+    },
+    "inspector": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::inspector.inspector"
+    },
+    "offloadlocation": {
+      "type": "string"
+    },
+    "doctor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::doctor.doctor"
+    },
+    "remark": {
+      "type": "text"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "animalvalue": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::animalvalue.animalvalue"
+    }
+  }
+}
