@@ -9,10 +9,12 @@ import {
   Text,
 } from "@ui-kitten/components";
 import { ToastAndroid, Button, StatusBar } from "react-native";
-// import BottomNav from "./src/components/resuables/bottom-nav/BottomNav";
+
 import InputNumber from "./components/resuables/inputfield-number/InputNumber";
 import CustomSelect from "./components/resuables/Select/CustomSelect";
-import SplashScreen from "./screens/SplashScren";
+import GetStarted from "./screens/GetStarted";
+import ChooseOption from "./screens/ChooseOption";
+import PlantEntry from "./screens/PlantEntry";
 
 const Stack = createNativeStackNavigator();
 export default () => (
@@ -22,7 +24,7 @@ export default () => (
       <Stack.Navigator>
         <Stack.Screen
           name="Home"
-          component={SplashScreen}
+          component={PlantEntry}
           options={{ title: "Welcome" }}
         />
         {/* <Stack.Screen name="Profile" component={SplashScreen} /> */}
@@ -30,15 +32,3 @@ export default () => (
     </NavigationContainer>
   </ApplicationProvider>
 );
-
-// const HomeScreen = ({ navigation }) => {
-//   return (
-//     <Button
-//       title="Go to Jane's profile"
-//       onPress={() => navigation.navigate("Profile", { name: "Jane" })}
-//     />
-//   );
-// };
-const ProfileScreen = ({ navigation, route }) => {
-  return <Text>This is {route.params.name}'s profile</Text>;
-};
