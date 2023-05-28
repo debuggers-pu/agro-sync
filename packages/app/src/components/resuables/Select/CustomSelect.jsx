@@ -17,16 +17,6 @@ const CustomSelect = () => {
         <SelectItem title="Option 2" />
         <SelectItem title="Option 3" />
       </Select>
-      <Select
-        style={styles.select}
-        placeholder="Active"
-        selectedIndex={selectedIndex}
-        onSelect={(index) => setSelectedIndex(index)}
-      >
-        <SelectItem title="Option 1" />
-        <SelectItem title="Option 2" />
-        <SelectItem title="Option 3" />
-      </Select>
     </Layout>
   );
 };
