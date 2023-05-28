@@ -1,12 +1,11 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-
 import PlantEntryScreen from "./screens/PlantEntryScreen";
 import GetStartedScreen from "./screens/GetStartedScreen";
 import ChooseOptionScreen from "./screens/ChooseOptionScreen";
 import AnimalEntryScreen from "./screens/AnimalEntryScreen";
-import { useQueryClient, QueryClient, QueryClientProvider } from "react-query";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 const Stack = createNativeStackNavigator();
 const App = () => {
