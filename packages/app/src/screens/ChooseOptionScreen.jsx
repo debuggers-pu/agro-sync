@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageBackground, StyleSheet, Text, View, Image } from "react-native";
+import { ImageBackground, Text, View, Image } from "react-native";
 import bg from "../assets/bg.png";
 import animal from "../assets/animal.png";
 import plant from "../assets/plant.png";
@@ -36,12 +36,5 @@ const ChooseOptionScreen = () => {
     </View>
   );
 };
-const styles = StyleSheet.create({
-  image: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
 
 export default ChooseOptionScreen;
