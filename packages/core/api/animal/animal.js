@@ -32,7 +32,7 @@ export async function updateAnimal(data) {
 
 export async function deleteAnimal() {
   try {
-    const res = await ApiClient.delete("/animal");
+    const res = await ApiClient.delete("/animal:id");
     return res.data;
   } catch (error) {
     console.error("deleteAnimal - Error: ", error);

@@ -22,7 +22,7 @@ export async function getAnimalValue() {
 
 export async function updateAnimalValue(data) {
   try {
-    const res = await ApiClient.put("/animalValue", data);
+    const res = await ApiClient.put("/animalValue:id", data);
     return res.data;
   } catch (error) {
     console.error("updateAnimalValue - Error: ", error);
@@ -32,7 +32,7 @@ export async function updateAnimalValue(data) {
 
 export async function deleteAnimalValue() {
   try {
-    const res = await ApiClient.delete("/animalValue");
+    const res = await ApiClient.delete("/animalValue:id");
     return res.data;
   } catch (error) {
     console.error("deleteAnimalValue - Error: ", error);

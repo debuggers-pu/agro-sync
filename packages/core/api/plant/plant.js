@@ -22,7 +22,7 @@ export async function getPlant() {
 
 export async function updatePlant(data) {
   try {
-    const res = await ApiClient.put("/plant", data);
+    const res = await ApiClient.put("/plant:id", data);
     return res.data;
   } catch (error) {
     console.error("updatePlant - Error: ", error);
@@ -32,7 +32,7 @@ export async function updatePlant(data) {
 
 export async function deletePlant() {
   try {
-    const res = await ApiClient.delete("/plant");
+    const res = await ApiClient.delete("/plant:id");
     return res.data;
   } catch (error) {
     console.error("deletePlant - Error: ", error);

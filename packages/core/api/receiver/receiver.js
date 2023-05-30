@@ -22,7 +22,7 @@ export async function getReceiver() {
 
 export async function updateReceiver(data) {
   try {
-    const res = await ApiClient.put("/receiver", data);
+    const res = await ApiClient.put("/receiver:id", data);
     return res.data;
   } catch (error) {
     console.error("updateReceiver - Error: ", error);
@@ -32,7 +32,7 @@ export async function updateReceiver(data) {
 
 export async function deleteReceiver() {
   try {
-    const res = await ApiClient.delete("/receiver");
+    const res = await ApiClient.delete("/receiver:id");
     return res.data;
   } catch (error) {
     console.error("deleteReceiver - Error: ", error);

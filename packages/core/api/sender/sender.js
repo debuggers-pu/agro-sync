@@ -22,7 +22,7 @@ export async function getSender() {
 
 export async function updateSender(data) {
   try {
-    const res = await ApiClient.put("/sender", data);
+    const res = await ApiClient.put("/sender:id", data);
     return res.data;
   } catch (error) {
     console.error("updateSender - Error: ", error);
@@ -32,7 +32,7 @@ export async function updateSender(data) {
 
 export async function deleteSender() {
   try {
-    const res = await ApiClient.delete("/sender");
+    const res = await ApiClient.delete("/sender:id");
     return res.data;
   } catch (error) {
     console.error("deleteSender - Error: ", error);

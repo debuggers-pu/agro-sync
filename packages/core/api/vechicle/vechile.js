@@ -22,7 +22,7 @@ export async function getVechicle() {
 
 export async function updateVechicle(data) {
   try {
-    const res = await ApiClient.put("/vechicle", data);
+    const res = await ApiClient.put("/vechicle:id", data);
     return res.data;
   } catch (error) {
     console.error("updateVechicle - Error: ", error);
@@ -32,7 +32,7 @@ export async function updateVechicle(data) {
 
 export async function deleteVechicle() {
   try {
-    const res = await ApiClient.delete("/vechicle");
+    const res = await ApiClient.delete("/vechicle:id");
     return res.data;
   } catch (error) {
     console.error("deleteVechicle - Error: ", error);

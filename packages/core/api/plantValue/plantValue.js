@@ -22,7 +22,7 @@ export async function getPlantValue() {
 
 export async function updatePlantValue(data) {
   try {
-    const res = await ApiClient.put("/plantValue", data);
+    const res = await ApiClient.put("/plantValue:id", data);
     return res.data;
   } catch (error) {
     console.error("updatePlantValue - Error: ", error);
@@ -32,7 +32,7 @@ export async function updatePlantValue(data) {
 
 export async function deletePlantValue() {
   try {
-    const res = await ApiClient.delete("/plantValue");
+    const res = await ApiClient.delete("/plantValue:id");
     return res.data;
   } catch (error) {
     console.error("deletePlantValue - Error: ", error);

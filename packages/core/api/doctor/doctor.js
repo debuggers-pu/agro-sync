@@ -22,7 +22,7 @@ export async function getDoctor() {
 
 export async function updateDoctor(data) {
   try {
-    const res = await ApiClient.put("/doctor", data);
+    const res = await ApiClient.put("/doctor:id", data);
     return res.data;
   } catch (error) {
     console.error("updateDoctor - Error: ", error);
@@ -32,7 +32,7 @@ export async function updateDoctor(data) {
 
 export async function deleteDoctor() {
   try {
-    const res = await ApiClient.delete("/doctor");
+    const res = await ApiClient.delete("/doctor:id");
     return res.data;
   } catch (error) {
     console.error("deleteDoctor - Error: ", error);

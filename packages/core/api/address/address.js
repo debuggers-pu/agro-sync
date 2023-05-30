@@ -22,7 +22,7 @@ export async function getAddress() {
 
 export async function updateAddress(data) {
   try {
-    const res = await ApiClient.put("/address", data);
+    const res = await ApiClient.put("/address:id", data);
     return res.data;
   } catch (error) {
     console.error("updateAddress - Error: ", error);
@@ -32,7 +32,7 @@ export async function updateAddress(data) {
 
 export async function deleteAddress() {
   try {
-    const res = await ApiClient.delete("/address");
+    const res = await ApiClient.delete("/address:id");
     return res.data;
   } catch (error) {
     console.error("deleteAddress - Error: ", error);
