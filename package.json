@@ -8,5 +8,9 @@
     "setup": " npx lerna run setup --scope=@agri-sync/cms",
     "start:cms": "npx lerna run up --scope=@agri-sync/cms",
     "start:app": "cd packages/app && expo start"
+  },
+  "dependencies": {
+    "react-native-flexi-radio-button": "^0.2.2",
+    "react-native-select-dropdown": "^3.3.3"
   }
 }
