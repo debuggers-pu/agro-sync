@@ -3,7 +3,7 @@ import {
   createDoctor,
   updateDoctor,
   deleteDoctor,
-} from "../doctor/doctor";
+} from "../api/doctor/doctor";
 
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { onOpenToast } from "@utils/toast";

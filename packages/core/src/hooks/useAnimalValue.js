@@ -3,7 +3,7 @@ import {
   createAnimalValue,
   updateAnimalValue,
   deleteAnimalValue,
-} from "../animalValue/animalValue";
+} from "../api/animalValue/animalValue";
 
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { onOpenToast } from "@utils/toast";

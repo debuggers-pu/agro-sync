@@ -1,4 +1,4 @@
-import ApiClient from "../..";
+import ApiClient from "../index";
 
 export async function createPlantValue(data) {
   try {

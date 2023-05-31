@@ -3,7 +3,7 @@ import {
   createAnimal,
   updateAnimal,
   deleteAnimal,
-} from "../animal/animal";
+} from "../api/animal/animal";
 
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { onOpenToast } from "@utils/toast";
