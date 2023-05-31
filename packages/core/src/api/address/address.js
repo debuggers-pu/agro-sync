@@ -12,7 +12,7 @@ export async function createAddress(data) {
 
 export async function getAddress() {
   try {
-    const res = await ApiClient.get("/address");
+    const res = await ApiClient.get("/addresses");
     return res.data;
   } catch (error) {
     console.error("getAddress - Error: ", error);
@@ -22,7 +22,7 @@ export async function getAddress() {
 
 export async function updateAddress(data) {
   try {
-    const res = await ApiClient.put("/address:id", data);
+    const res = await ApiClient.put("/addresses:id", data);
     return res.data;
   } catch (error) {
     console.error("updateAddress - Error: ", error);
@@ -32,7 +32,7 @@ export async function updateAddress(data) {
 
 export async function deleteAddress() {
   try {
-    const res = await ApiClient.delete("/address:id");
+    const res = await ApiClient.delete("/addresses:id");
     return res.data;
   } catch (error) {
     console.error("deleteAddress - Error: ", error);

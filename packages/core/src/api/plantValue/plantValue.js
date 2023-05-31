@@ -2,7 +2,7 @@ import ApiClient from "../..";
 
 export async function createPlantValue(data) {
   try {
-    const res = await ApiClient.post("/plantValue", data);
+    const res = await ApiClient.post("/plantvalues", data);
     return res.data;
   } catch (error) {
     console.error("postUser - Error: ", error);
@@ -12,7 +12,7 @@ export async function createPlantValue(data) {
 
 export async function getPlantValue() {
   try {
-    const res = await ApiClient.get("/plantValue");
+    const res = await ApiClient.get("/plantvalues");
     return res.data;
   } catch (error) {
     console.error("getPlantValue - Error: ", error);
@@ -22,7 +22,7 @@ export async function getPlantValue() {
 
 export async function updatePlantValue(data) {
   try {
-    const res = await ApiClient.put("/plantValue:id", data);
+    const res = await ApiClient.put("/plantvalues:id", data);
     return res.data;
   } catch (error) {
     console.error("updatePlantValue - Error: ", error);
@@ -32,7 +32,7 @@ export async function updatePlantValue(data) {
 
 export async function deletePlantValue() {
   try {
-    const res = await ApiClient.delete("/plantValue:id");
+    const res = await ApiClient.delete("/plantvalues:id");
     return res.data;
   } catch (error) {
     console.error("deletePlantValue - Error: ", error);

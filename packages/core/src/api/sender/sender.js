@@ -2,7 +2,7 @@ import ApiClient from "../..";
 
 export async function createSender(data) {
   try {
-    const res = await ApiClient.post("/sender", data);
+    const res = await ApiClient.post("/senders", data);
     return res.data;
   } catch (error) {
     console.error("postUser - Error: ", error);
@@ -12,7 +12,7 @@ export async function createSender(data) {
 
 export async function getSender() {
   try {
-    const res = await ApiClient.get("/sender");
+    const res = await ApiClient.get("/senders");
     return res.data;
   } catch (error) {
     console.error("getSender - Error: ", error);
@@ -22,7 +22,7 @@ export async function getSender() {
 
 export async function updateSender(data) {
   try {
-    const res = await ApiClient.put("/sender:id", data);
+    const res = await ApiClient.put("/senders:id", data);
     return res.data;
   } catch (error) {
     console.error("updateSender - Error: ", error);
@@ -32,7 +32,7 @@ export async function updateSender(data) {
 
 export async function deleteSender() {
   try {
-    const res = await ApiClient.delete("/sender:id");
+    const res = await ApiClient.delete("/senders:id");
     return res.data;
   } catch (error) {
     console.error("deleteSender - Error: ", error);

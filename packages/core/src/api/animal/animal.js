@@ -2,7 +2,7 @@ import ApiClient from "../..";
 
 export async function createAnimal(data) {
   try {
-    const res = await ApiClient.post("/animal", data);
+    const res = await ApiClient.post("/animals", data);
     return res.data;
   } catch (error) {
     console.error("postUser - Error: ", error);
@@ -12,7 +12,7 @@ export async function createAnimal(data) {
 
 export async function getAnimal() {
   try {
-    const res = await ApiClient.get("/animal");
+    const res = await ApiClient.get("/animals");
     return res.data;
   } catch (error) {
     console.error("getAnimal - Error: ", error);
@@ -22,7 +22,7 @@ export async function getAnimal() {
 
 export async function updateAnimal(data) {
   try {
-    const res = await ApiClient.put("/animal", data);
+    const res = await ApiClient.put("/animals", data);
     return res.data;
   } catch (error) {
     console.error("updateAnimal - Error: ", error);
@@ -32,7 +32,7 @@ export async function updateAnimal(data) {
 
 export async function deleteAnimal() {
   try {
-    const res = await ApiClient.delete("/animal:id");
+    const res = await ApiClient.delete("/animals:id");
     return res.data;
   } catch (error) {
     console.error("deleteAnimal - Error: ", error);
