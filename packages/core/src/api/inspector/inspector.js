@@ -2,7 +2,7 @@ import ApiClient from "../..";
 
 export async function createInspector(data) {
   try {
-    const res = await ApiClient.post("/inspector", data);
+    const res = await ApiClient.post("/inspectors", data);
     return res.data;
   } catch (error) {
     console.error("postUser - Error: ", error);
@@ -12,7 +12,7 @@ export async function createInspector(data) {
 
 export async function getInspector() {
   try {
-    const res = await ApiClient.get("/inspector");
+    const res = await ApiClient.get("/inspectors");
     return res.data;
   } catch (error) {
     console.error("getInspector - Error: ", error);
@@ -22,7 +22,7 @@ export async function getInspector() {
 
 export async function updateInspector(data) {
   try {
-    const res = await ApiClient.put("/inspector:id", data);
+    const res = await ApiClient.put("/inspectors:id", data);
     return res.data;
   } catch (error) {
     console.error("updateInspector - Error: ", error);
@@ -32,7 +32,7 @@ export async function updateInspector(data) {
 
 export async function deleteInspector() {
   try {
-    const res = await ApiClient.delete("/inspector:id");
+    const res = await ApiClient.delete("/inspectors:id");
     return res.data;
   } catch (error) {
     console.error("deleteInspector - Error: ", error);

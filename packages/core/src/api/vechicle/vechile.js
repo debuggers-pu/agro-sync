@@ -2,7 +2,7 @@ import ApiClient from "../..";
 
 export async function createVechicle(data) {
   try {
-    const res = await ApiClient.post("/vechicle", data);
+    const res = await ApiClient.post("/vehicles", data);
     return res.data;
   } catch (error) {
     console.error("postUser - Error: ", error);
@@ -12,7 +12,7 @@ export async function createVechicle(data) {
 
 export async function getVechicle() {
   try {
-    const res = await ApiClient.get("/vechicle");
+    const res = await ApiClient.get("/vehicles");
     return res.data;
   } catch (error) {
     console.error("getVechicle - Error: ", error);
@@ -22,7 +22,7 @@ export async function getVechicle() {
 
 export async function updateVechicle(data) {
   try {
-    const res = await ApiClient.put("/vechicle:id", data);
+    const res = await ApiClient.put("/vehicles:id", data);
     return res.data;
   } catch (error) {
     console.error("updateVechicle - Error: ", error);
@@ -32,7 +32,7 @@ export async function updateVechicle(data) {
 
 export async function deleteVechicle() {
   try {
-    const res = await ApiClient.delete("/vechicle:id");
+    const res = await ApiClient.delete("/vehicles:id");
     return res.data;
   } catch (error) {
     console.error("deleteVechicle - Error: ", error);
