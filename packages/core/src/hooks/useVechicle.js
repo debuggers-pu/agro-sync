@@ -3,7 +3,7 @@ import {
   createVecicle,
   updateVechicle,
   deleteVechicle,
-} from "../vechicle/vechile";
+} from "../api/vechicle/vechile";
 
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { onOpenToast } from "@utils/toast";

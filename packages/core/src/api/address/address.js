@@ -1,11 +1,11 @@
-import ApiClient from "../..";
+import ApiClient from "../index";
 
 export async function createAddress(data) {
   try {
-    const res = await ApiClient.post("/address", data);
+    const res = await ApiClient.post("/addresses", data);
     return res.data;
   } catch (error) {
-    console.error("postUser - Error: ", error);
+    console.error("createAddress - Error: ", error);
     throw error;
   }
 }

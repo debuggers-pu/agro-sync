@@ -31,10 +31,6 @@
       "type": "datetime",
       "required": true
     },
-    "onloadlocation": {
-      "type": "string",
-      "required": false
-    },
     "reason": {
       "type": "string"
     },
@@ -48,9 +44,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::inspector.inspector"
-    },
-    "offloadlocation": {
-      "type": "string"
     },
     "doctor": {
       "type": "relation",
@@ -67,6 +60,16 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::animalvalue.animalvalue"
+    },
+    "onloadlocation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "address.address"
+    },
+    "offloadlocation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "address.address"
     }
   }
 }

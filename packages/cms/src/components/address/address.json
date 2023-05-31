@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_address_addresses",
+  "info": {
+    "displayName": "address",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "province": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "localbody": {
+      "type": "string"
+    },
+    "wardno": {
+      "type": "integer"
+    },
+    "tol": {
+      "type": "string"
+    }
+  }
+}

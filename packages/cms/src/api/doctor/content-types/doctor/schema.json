@@ -26,9 +26,9 @@
       "type": "string"
     },
     "address": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::address.address"
+      "type": "component",
+      "repeatable": false,
+      "component": "address.address"
     }
   }
 }
