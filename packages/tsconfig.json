@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "baseUrl": "./core/src",
+    "paths": {
+      "@agro-sync/*": ["api/*"],
+      "@agro-sync/store/*": ["store/*"],
+      "@agro-sync/hooks/*": ["hooks/*"],
+      "@agro-sync/cms/*": ["../../cms/*"],
+      "@app/*": ["../../app/src/*"]
+    }
+  }
+}

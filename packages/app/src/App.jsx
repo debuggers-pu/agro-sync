@@ -5,11 +5,21 @@ import PlantEntryScreen from "./screens/PlantEntryScreen";
 import GetStartedScreen from "./screens/GetStartedScreen";
 import ChooseOptionScreen from "./screens/ChooseOptionScreen";
 import AnimalEntryScreen from "./screens/AnimalEntryScreen";
-import { QueryClient, QueryClientProvider } from "react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-const Stack = createNativeStackNavigator();
 const App = () => {
-  const queryClient = new QueryClient();
+  const Stack = createNativeStackNavigator();
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: false,
+        refetchOnMount: false,
+        refetchOnReconnect: false,
+        retry: false,
+        staleTime: 5 * 60 * 1000,
+      },
+    },
+  });
   return (
     <QueryClientProvider client={queryClient}>
       <NavigationContainer>

@@ -22,11 +22,6 @@
       "min": 9,
       "max": 10
     },
-    "address": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::address.address"
-    },
     "type": {
       "type": "enumeration",
       "enum": [
@@ -36,6 +31,11 @@
     },
     "idnumber": {
       "type": "string"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "address.address"
     }
   }
 }

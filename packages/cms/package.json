@@ -11,11 +11,11 @@
     "setup": "docker build -t agri-sync:latest .",
     "up": "docker compose up"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.8.2",
-    "@strapi/plugin-users-permissions": "4.8.2",
+    "@strapi/plugin-documentation": "^4.10.6",
     "@strapi/plugin-i18n": "4.8.2",
+    "@strapi/plugin-users-permissions": "4.8.2",
+    "@strapi/strapi": "4.8.2",
     "pg": "8.8.0"
   },
   "author": {
