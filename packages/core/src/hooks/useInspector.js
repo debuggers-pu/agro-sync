@@ -3,7 +3,7 @@ import {
   createInspector,
   updateInspector,
   deleteInspector,
-} from "../inspector/inspector";
+} from "../api/inspector/inspector";
 
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { onOpenToast } from "@utils/toast";

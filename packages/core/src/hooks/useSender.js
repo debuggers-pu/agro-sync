@@ -3,7 +3,7 @@ import {
   createSender,
   updateSender,
   deleteSender,
-} from "../sender/sender";
+} from "../api/sender/sender";
 
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { onOpenToast } from "@utils/toast";

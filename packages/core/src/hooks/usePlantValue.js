@@ -3,7 +3,7 @@ import {
   createPlantValue,
   updatePlantValue,
   deletePlantValue,
-} from "../plantValue/plantValue";
+} from "../api/plantValue/plantValue";
 
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { onOpenToast } from "@utils/toast";

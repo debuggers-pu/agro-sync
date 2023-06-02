@@ -3,7 +3,7 @@ import {
   createReceiver,
   updateReceiver,
   deleteReceiver,
-} from "../receiver/receiver";
+} from "../api/receiver/receiver";
 
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { onOpenToast } from "@utils/toast";
