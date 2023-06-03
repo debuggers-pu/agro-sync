@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@agri-sync/core": "*",
     "@eva-design/eva": "^2.2.0",
     "@react-native-picker/picker": "2.4.8",
     "@react-navigation/bottom-tabs": "^6.5.7",
@@ -24,11 +25,11 @@
     "react": "18.2.0",
     "react-hook-form": "^7.44.1",
     "react-native": "0.71.8",
+    "react-native-axios": "^0.17.1",
     "react-native-safe-area-context": "4.5.0",
     "react-native-screens": "~3.20.0",
     "react-native-svg": "13.4.0",
-    "react-native-vector-icons": "^9.2.0",
-    "@agri-sync/core": "*"
+    "react-native-vector-icons": "^9.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
