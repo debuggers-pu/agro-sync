@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, ScrollView, SafeAreaView } from "react-native";
 import Seperator from "../components/resuables/seperator/Seperator";
-
-import DropDown from "../components/resuables/dropdown/DropDown";
 import CustomInput from "../components/resuables/input/Input";
 import Area from "../components/area/Area";
 import Radio from "../components/resuables/radio/Radio";
 import UserDetails from "../components/userDetails/UserDetails";
+import CustomDropdown from "../components/resuables/dropdown/DropDown";
 
-// import FontAwesome from "react-native-vector-icons/FontAwesome";
+
+
+
 
 const PlantEntry = () => {
-  const countries = ["Niyamit", "Chadke", "Anugaman"];
+  const dropdownOptions = [
+    { label: "Option 1", value: "option1" },
+    { label: "Option 2", value: "option2" },
+    { label: "Option 3", value: "option3" },
+  ];
+
+  const radioOptions = [
+    { label: "Option 1", value: "option1" },
+    { label: "Option 2", value: "option2" },
+    { label: "Option 3", value: "option3" },
+  ];
   return (
     <>
       <SafeAreaView>
@@ -27,11 +38,11 @@ const PlantEntry = () => {
 
             <View className="flex-col mb-4 mt-8">
               {/* Radio Button lai clickable garaunu xa */}
-              <Radio title="Type of Checking " />
+              <Radio options={radioOptions} label={"Type of Checking"} />
             </View>
 
             <View className="flex-col mb-4">
-              <View className="flex-row mb-2">
+              <View className="flex-row items-center mb-2">
                 <Text className="text-lg text-primary font-[500]">
                   Plant Name :{" "}
                 </Text>
@@ -40,17 +51,20 @@ const PlantEntry = () => {
               </View>
             </View>
             <View className="flex-col mb-4">
-              <View className="flex-row mb-2">
+              <View className="flex-col mb-2">
                 <Text className="text-lg text-primary font-[500]">
                   Quantity :{" "}
                 </Text>
 
                 <CustomInput placeholder="Enter Number" />
-                <DropDown label={"Select Unit"} data={countries} />
+                <CustomDropdown
+                  options={dropdownOptions}
+                  label="Select an option"
+                />
               </View>
             </View>
             <Area title={"Location of checking"} />
-            <Radio title="Type of Plants" />
+            <Radio options={radioOptions} label={"Type of Plants "} />
             {/* Veichel wala it will be done after we can alter the width of dropdown */}
             <Area title={"Production Area"} />
             <UserDetails title="Sender's Details" />

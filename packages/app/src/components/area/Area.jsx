@@ -1,29 +1,35 @@
-import React from "react";
-import DropDown from "../resuables/dropdown/DropDown";
+import React, { useState } from "react";
+
 import { View, Text } from "react-native";
 import CustomInput from "../resuables/input/Input";
-import { RadioGroup, RadioButton } from "react-native-flexi-radio-button";
+
+import CustomDropdown from "../resuables/dropdown/DropDown";
 
 const Area = ({ title }) => {
-  const countries = ["Niyamit", "Chadke", "Anugaman"];
+  const dropdownOptions = [
+    { label: "Option 1", value: "option1" },
+    { label: "Option 2", value: "option2" },
+    { label: "Option 3", value: "option3" },
+  ];
   return (
     <>
       <View className="flex-col mb-4">
         <Text className="text-lg text-primary font-[500] mb-4">{title}:</Text>
-        <View className="flex-row mb-2">
+        <View className="flex-col mb-2">
           <Text className="text-primary text-lg font-[400] mr-4">
             Province :
           </Text>
-          <DropDown label={"Select the Province"} data={countries} />
+
+          <CustomDropdown options={dropdownOptions} label="Select an option" />
         </View>
-        <View className="flex-row mb-4">
+        <View className="flex-col mb-4">
           <Text className="text-primary text-lg font-[400] mr-4">
             Metro/Rural Municipality :
           </Text>
-          <DropDown label={"Select local body"} data={countries} />
+          <CustomDropdown options={dropdownOptions} label="Select an option" />
         </View>
 
-        <View className="flex-row mb-2">
+        <View className="flex-row mb-2 items-center">
           <Text className="text-primary text-lg font-[400] mr-4">Ward No:</Text>
           <CustomInput placeholder="Enter ward No" />
         </View>
