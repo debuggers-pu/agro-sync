@@ -6,9 +6,10 @@ import Area from "../components/area/Area";
 import Radio from "../components/resuables/radio/Radio";
 import UserDetails from "../components/userDetails/UserDetails";
 import CustomDropdown from "../components/resuables/dropdown/DropDown";
-import { Badge } from "react-native-paper";
 
-// import FontAwesome from "react-native-vector-icons/FontAwesome";
+
+
+
 
 const PlantEntry = () => {
   const dropdownOptions = [
