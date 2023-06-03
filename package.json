@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
+    "@vee-validate/zod": "^4.9.6",
     "react-native-flexi-radio-button": "^0.2.2",
     "react-native-paper": "^5.8.0",
     "react-native-select-dropdown": "^3.3.3",
-    "react-native-vector-icons": "^9.2.0"
+    "react-native-vector-icons": "^9.2.0",
+    "vee-validate": "^4.9.6",
+    "zod": "^3.21.4"
   }
 }

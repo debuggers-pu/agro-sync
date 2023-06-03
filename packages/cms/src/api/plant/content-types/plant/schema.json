@@ -46,7 +46,7 @@
       "relation": "oneToOne",
       "target": "api::sender.sender"
     },
-    "remark": {
+    "remarks": {
       "type": "text"
     },
     "productionAddress": {
