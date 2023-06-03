@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import { Menu, TextInput, useTheme, Icon } from "react-native-paper";
+import { getDistrict } from "@agri-sync/core/src/api/location/index";
 
-const CustomDropdown = ({ options, label }) => {
+const CustomDropdown = ({ options, label, handleChange }) => {
   const [visible, setVisible] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
   const openMenu = () => setVisible(true);
   const closeMenu = () => setVisible(false);
 
-  const handleOptionSelect = (option) => {
-    setSelectedOption(option);
-    closeMenu();
-  };
-
+  console.log(options);
   return (
     <Menu
       visible={visible}
@@ -29,17 +26,21 @@ const CustomDropdown = ({ options, label }) => {
           }}
           // className="border bg-white rounded-lg"
           label={label}
-          value={selectedOption ? selectedOption.label : ""}
+          value={selectedOption ? selectedOption : ""}
           onTouchStart={openMenu}
         />
       }
     >
-      {options.map((option) => (
+      {options.map((option, index) => (
         <Menu.Item
           style={{ backgroundColor: "white" }}
-          key={option.value}
-          onPress={() => handleOptionSelect(option)}
-          title={option.label}
+          key={`${index}_opt`}
+          onPress={() => {
+            handleChange(option);
+            setSelectedOption(option.name);
+            closeMenu();
+          }}
+          title={option.name}
         />
       ))}
     </Menu>

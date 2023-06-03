@@ -1,8 +1,9 @@
 import React from "react";
-import { ImageBackground, Text, View } from "react-native";
+import { Image, ImageBackground, Text, View } from "react-native";
 import bg from "../assets/bg.png";
 import { useNavigation } from "@react-navigation/native";
 import ButtonComponent from "../components/resuables/button/Button";
+import arrow from "../assets/arrow.png";
 
 const GetStartedScreen = () => {
   const navigation = useNavigation();
@@ -26,10 +27,13 @@ const GetStartedScreen = () => {
             agro-products
           </Text>
         </View>
+
         <ButtonComponent
           label="Get Started"
           onPress={() => navigation.navigate("Choose")}
-        ></ButtonComponent>
+        >
+          <Image source={arrow} />
+        </ButtonComponent>
       </ImageBackground>
     </View>
   );
